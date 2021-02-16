@@ -1,0 +1,102 @@
+/*
+set color, margin, and font for the whole body
+*/
+body{
+    background-color: rgb(230, 230, 230);
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*
+this selector affects banner's
+- color
+- fixed-banner
+*/
+.topnav {
+    position: sticky;
+    top: 0;
+    background-color:rgb(53, 90, 145, 0.9);
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+/*
+style the links in the banner
+*/
+.topnav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 1rem 1rem 1rem;
+    color: aliceblue;
+}
+/*
+The effect when hover mouse over
+*/
+.topnav a:hover{
+    background-color: rgb(59, 59, 59,0.5);
+}
+/*
+center the head div
+*/
+.resume-head{
+    text-align: center;
+}
+/*
+Change title's font and size
+*/
+#title{
+    font-family: 'Newsreader', serif;
+    font-size: 42px;
+}
+/*
+resize profile image
+*/
+#profile-image img{
+    width: 150px;
+    height: 150px;
+}
+/*
+change the color for the links
+*/
+.websites a{
+    text-decoration: none;
+    color: rgb(91, 91, 167);
+    
+}
+/*
+setting the body div 5rem shorter on each side
+*/
+.resume-body{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+/*
+styling title for each section
+*/
+.sub-header{
+    font-family: 'Newsreader', serif;
+    color: lightseagreen;
+    font-size: 28px;
+    padding: 0.5rem;
+}
+/*
+styling bottom border for each section
+*/
+.info-section{
+    border-bottom: 2px solid lightgrey;
+    padding-top: 2rem;
+}
+/*
+delete bottom border for project section
+*/
+#projects{
+    border: none;
+}
+/*
+change font size for list
+*/
+li{
+    padding-bottom: 1rem;
+    font-size: 18px;
+}

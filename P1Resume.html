@@ -6,36 +6,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h1>Resume</h1>
-        <ul class="person-info">
-            <section id="name">
-                <h2>Name</h2>
-                <p>Giang Vu Binh Nguyen</p>
-            </section>
-            <section id="mailing-address">
-                <h2>Mailing Address</h2>
-                <p>Virginia Tech, Blacksburg, Virginia, USA</p>
-            </section>
-            <section id="email">
-                <h2>Email</h2>
-                <a href="#">giangvubinhn@vt.edu</a>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <nav>
-                    <li>HTML</li> 
-                    <li>CSS</li> 
-                    <li>JavaScript</li> 
-                    <li>Python</li> 
-                    <li>Java</li>
-                </nav>
-            </section>
-        </ul>
-        <img id="image" src="/vt-logo.png"/>
-        
+    <div class="topnav" id="page-banner">
+
+      <a href="#education">Education</a>
+      <a href="#work">Work Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+
+    </div>
+    <div class="resume-head">
+        <h1 id="title">
+            2021 RESUME
+        </h1>
+        <div id="profile-image">
+            <img src="profilepic.png">
+        </div>
+        <p class="personal-info">
+            <span id="name">Giang Nguyen</span> |
+            <span id="address"> 123 N Random St, Hampton, Virginia, 23666</span> |
+            <span id="phone"> 757-222-1122</span>
+        </p>
+        <nav class="websites">
+            <a href="https://www.linkedin.com/in/giangvubinhn/" target="_blank">LinkedIn</a> |
+            <a href="http://giangvbng.herokuapp.com/" target="_blank">Portfolio</a> |
+            <a href="https://github.com/giangvubinhng" target="_blank">Github</a> |
+            <a href="mailto:giangvubinhn@vt.edu" target="_blank">Email</a>
+        </nav>
+    </div>
+    <div class="resume-body">
+        <section class="info-section" id="education">
+            <h3 class="sub-header">Education</h3>
+            <ul class="list" id="school">
+                <li>Virginia Tech</li>
+                <ul>
+                    <li>B.S. Computer Science</li>
+                    <li>2019 - Expected: 2023</li>
+                </ul>
+                <li>Hampton High School</li>
+                <ul>
+                    <li>International Baccalaureate Program</li>
+                    <li>2015-2019</li>
+                </ul>
+            </ul>
+        </section>
+        <section class="info-section" id="work">
+            <h3 class="sub-header">Work Experience</h3>
+            <ul class="list" id="jobs">
+                <li>Virginia Tech University Libraries Studios</li>
+                <ul>
+                    <li>Student Staff</li>
+                    <li>Troubleshoot and repair studios' devices</li>
+                    <li>October 2019 - Present</li>
+                </ul>
+                <li>Virginia Tech University Libraries Studios</li>
+                <ul>
+                    <li>Student Software Developer</li>
+                    <li>Developer a VR project called "VT Virtual Sculpture Garden" </li>
+                    <li>May 2020 - August 2020</li>
+                </ul>
+            </ul>
+        </section>
+        <section class="info-section" id="skills">
+            <h3 class="sub-header">Technical Skills</h3>
+            <ul class="list" id="language">
+                <li>Java</li>
+                <li>Python</li>
+                <li>C Programming Language</li>
+                <li>C#</li>
+            </ul>
+        </section>
+        <section class="info-section" id="projects">
+            <h3 class="sub-header">Projects</h3>
+            <ul class="list" id="proj">
+                <li>VT Virtual Sculpture Garden</li>
+                <ul>
+                    <li>Developed a system to automatically import sculptures into the application at runtime.</li>
+                </ul>
+                <li>Penguiny</li>
+                <ul>
+                    <li>2D Mobile Game inspired by Flappy Bird</li>
+                </ul>
+                <li>FireStar</li>
+                <ul>
+                    <li>2D WebGL game allowing players to practice their mouse aiming accuracy.</li>
+                </ul>
+            </ul>
+        </section>
     </div>
 </body>
 </html>
